@@ -12,3 +12,10 @@ Test string - Expected result
 <<> - False (one bracket pair was not closed)
 “” - True. (no brackets in the string will return True)
 <abc...xyz> - True (non-bracket characters are ignored appropriately)
+
+Simulation Result:
+https://github.com/franciscohumarang/AngleBrackets/blob/master/Simulation.PNG
+
+
+Unit Test Result:
+https://github.com/franciscohumarang/AngleBrackets/blob/master/UnitTest.PNG
