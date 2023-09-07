@@ -13,6 +13,40 @@ Test string - Expected result
 “” - True. (no brackets in the string will return True)
 <abc...xyz> - True (non-bracket characters are ignored appropriately)
 
+#Code Description:
+The actual method is inside AngleBrackets project under Util.cs which goes like this:
+```C#
+
+ public class Util
+    {
+        public static bool MatchingTest(string input)
+        {
+            int rightAngleBracketCtr = 0; // Initialize a count for right angle brackets.
+
+            foreach (char c in input)
+            {
+                if (c == '<')
+                {
+                    rightAngleBracketCtr++;
+                }
+                else if (c == '>')
+                {
+                    // If the count goes negative, it means a left angle bracket appeared without a corresponding right or open bracket.
+                    // In this case, return false immediately.
+                    rightAngleBracketCtr--;
+                    if (rightAngleBracketCtr < 0)
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            //if the count is zero, it means all brackets are matched.
+            bool rValue = rightAngleBracketCtr == 0 ? true : false;
+            
+            return rValue; 
+        }
+```
 Simulation Result:
 <img src='https://github.com/franciscohumarang/AngleBrackets/blob/master/Simulation.PNG'>
 
