@@ -2,8 +2,8 @@
 // Simulation
 using AngleBrackets;
 
-Console.WriteLine("Welcome to the Bracket Matching Checker!");
-Console.WriteLine("Enter a string to check for matching angle brackets. Press 'Q' to quit.");
+Console.WriteLine("Welcome to the Angle Bracket Matching Test!");
+Console.WriteLine("Enter a string to check for matching angle brackets (<>). Press 'Q' to quit.");
 
 while (true)
 {

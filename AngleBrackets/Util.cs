@@ -6,30 +6,36 @@ using System.Threading.Tasks;
 
 namespace AngleBrackets
 {
-
+    /************************
+     * 
+     *  This method hecks if a string has matching 
+     *  angle brackets
+     */
     public class Util
     {
-        public static bool MatchingTest(string inputStr)
+        public static bool MatchingTest(string input)
         {
-            int openBracketCount = 0;
+            int rightAngleBracketCtr = 0; // Initialize a count for right angle brackets.
 
-            foreach (char c in inputStr)
+            foreach (char c in input)
             {
                 if (c == '<')
                 {
-                    openBracketCount++;
+                    rightAngleBracketCtr++;
                 }
                 else if (c == '>')
                 {
-                    openBracketCount--;
-                    if (openBracketCount < 0)
+                    // If the count goes negative, it means a left angle bracket appeared without a corresponding right or open bracket.
+                    // In this case, return false immediately.
+                    rightAngleBracketCtr--;
+                    if (rightAngleBracketCtr < 0)
                     {
                         return false;
                     }
                 }
             }
 
-            return openBracketCount == 0;
+            return rightAngleBracketCtr == 0;
         }
     }
 }
