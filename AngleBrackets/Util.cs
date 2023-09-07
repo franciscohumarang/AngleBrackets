@@ -35,7 +35,10 @@ namespace AngleBrackets
                 }
             }
 
-            return rightAngleBracketCtr == 0;
+            //if the count is zero, it means all brackets are matched.
+            bool rValue = rightAngleBracketCtr == 0 ? true : false;
+            
+            return rValue; 
         }
     }
 }
