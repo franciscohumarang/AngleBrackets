@@ -1,7 +1,7 @@
 # AngleBrackets
 Open and close angle bracket test
 
-Write a method that takes a string argument and returns whether or not characters in the
+A method that takes a string argument and returns whether or not characters in the
 string have matching angle brackets. Meaning for every < there is a corresponding >
 bracket. Return true if they do, return false if they do not.
 Please unit test with the following use cases (and any others you choose to ensure
