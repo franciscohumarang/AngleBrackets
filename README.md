@@ -7,14 +7,13 @@ bracket. Return true if they do, return false if they do not.
 Please unit test with the following use cases (and any others you choose to ensure
 functionality):
 Test string - Expected result
-```
-<> - True
+ <> - True
 >< - False (closed bracket can’t proceed all open brackets.)
 <<> - False (one bracket pair was not closed)
 “” - True. (no brackets in the string will return True)
 <abc...xyz> - True (non-bracket characters are ignored appropriately)
-```
-## Code Description:
+
+Code Description:
 The actual method is inside AngleBrackets project under Util.cs which goes like this:
 ```C#
 
