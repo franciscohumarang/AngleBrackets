@@ -14,8 +14,8 @@ Test string - Expected result
 <abc...xyz> - True (non-bracket characters are ignored appropriately)
 
 Simulation Result:
-https://github.com/franciscohumarang/AngleBrackets/blob/master/Simulation.PNG
+![Simulation](https://github.com/franciscohumarang/AngleBrackets/blob/master/Simulation.PNG)
 
 
 Unit Test Result:
-https://github.com/franciscohumarang/AngleBrackets/blob/master/UnitTest.PNG
+![UnitTest](https://github.com/franciscohumarang/AngleBrackets/blob/master/UnitTest.PNG)
